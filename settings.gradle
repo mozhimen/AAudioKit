@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "AudioKit_FFmpeg"
+include ':app'
+include ':audiok_ffmpeg'
+include ':SwiftKit'
+project(':SwiftKit').projectDir = new File("C:\\Users\\mozhimen\\Documents\\GitHub\\SwiftKit")
+include ':SwiftKit:basick'
+include ':SwiftKit:uicorek'
+include ':SwiftKit:underlayk'
+include ':SwiftKit:componentk'
