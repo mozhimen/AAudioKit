@@ -1,0 +1,2 @@
+# AudioKit_Speex
+Speex编解码及播放的Android语音库
