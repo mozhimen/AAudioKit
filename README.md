@@ -1,2 +1,2 @@
 # AudioKit_Speex
-Speex编解码及播放的Android语音库
+二次开发FFmpeg的Android语音编解码库
