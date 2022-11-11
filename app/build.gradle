@@ -37,6 +37,8 @@ android {
 dependencies {
 
     implementation project(':SwiftKit:basick')
+    implementation project(':SwiftKit:componentk')
+    implementation project(':audiok_ffmpeg')
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

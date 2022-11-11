@@ -10,7 +10,7 @@ package com.mozhimen.audiok_ffmpeg
 object UtilKVerifyFormat {
     @JvmStatic
     fun isSpeexValid(filePathWithName: String): Boolean =
-        filePathWithName.endsWith("spx") || filePathWithName.endsWith("speex")
+        filePathWithName.endsWith("spx")
 
     @JvmStatic
     fun isMp3Valid(filePathWithName: String): Boolean =
