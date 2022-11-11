@@ -12,7 +12,7 @@ class MainActivity : BaseKActivityVB<ActivityMainBinding>() {
         }
 
         vb.btnWavToSpeex.setOnClickListener {
-            
+
         }
     }
 }
