@@ -15,3 +15,6 @@ fun String.isMp3Valid(): Boolean =
 
 fun String.isWavValid(): Boolean =
     UtilKVerifyFormat.isWavValid(this)
+
+fun String.isAmrValid(): Boolean =
+    UtilKVerifyFormat.isAmrValid(this)

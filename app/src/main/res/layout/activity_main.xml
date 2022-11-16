@@ -11,25 +11,45 @@
         tools:context=".MainActivity">
 
         <Button
-            android:id="@+id/btn_copy_speex"
+            android:id="@+id/btn_copy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="将SPEEX文件拷贝到目录"
+            android:text="将Amr文件拷贝到目录"
             tools:ignore="HardcodedText" />
 
         <Button
-            android:id="@+id/btn_speex_to_mp3"
+            android:id="@+id/btn_amr_to_wav"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SPEEX转MP3"
+            android:text="Amr转Wav"
             tools:ignore="HardcodedText" />
 
         <Button
             android:id="@+id/btn_play"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="播放MP3"
+            android:text="播放Wav"
             tools:ignore="HardcodedText" />
 
+        <Button
+            android:id="@+id/btn_copy_speex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="将speex文件拷贝到目录"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_speex_to_wav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="speex转Wav"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_play_speex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="播放Wav"
+            tools:ignore="HardcodedText" />
     </LinearLayout>
 </layout>

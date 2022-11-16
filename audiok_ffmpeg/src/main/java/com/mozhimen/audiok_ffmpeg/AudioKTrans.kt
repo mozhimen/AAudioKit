@@ -20,28 +20,50 @@ object AudioKTrans {
     suspend fun speex2mp3(sourcePathWithName: String, destPathWithName: String): Boolean {
         return if (sourcePathWithName.isSpeexValid() && destPathWithName.isMp3Valid())
             trans(sourcePathWithName, destPathWithName)
-        else false
+        else {
+            Log.e(TAG, "speex2mp3: 文件格式不正确")
+            false
+        }
     }
 
     @JvmStatic
     suspend fun mp32speex(sourcePathWithName: String, destPathWithName: String): Boolean {
         return if (sourcePathWithName.isMp3Valid() && destPathWithName.isSpeexValid())
             trans(sourcePathWithName, destPathWithName)
-        else false
+        else {
+            Log.e(TAG, "speex2mp3: 文件格式不正确")
+            false
+        }
     }
 
     @JvmStatic
     suspend fun speex2wav(sourcePathWithName: String, destPathWithName: String): Boolean {
         return if (sourcePathWithName.isSpeexValid() && destPathWithName.isWavValid())
             trans(sourcePathWithName, destPathWithName)
-        else false
+        else {
+            Log.e(TAG, "speex2mp3: 文件格式不正确")
+            false
+        }
     }
 
     @JvmStatic
     suspend fun wav2speex(sourcePathWithName: String, destPathWithName: String): Boolean {
         return if (sourcePathWithName.isWavValid() && destPathWithName.isSpeexValid())
             trans(sourcePathWithName, destPathWithName)
-        else false
+        else {
+            Log.e(TAG, "speex2mp3: 文件格式不正确")
+            false
+        }
+    }
+
+    @JvmStatic
+    suspend fun amr2wav(sourcePathWithName: String, destPathWithName: String): Boolean {
+        return if (sourcePathWithName.isAmrValid() && destPathWithName.isWavValid())
+            trans(sourcePathWithName, destPathWithName)
+        else {
+            Log.e(TAG, "speex2mp3: 文件格式不正确")
+            false
+        }
     }
 
     suspend fun trans(sourcePathWithName: String, destPathWithName: String): Boolean = suspendCancellableCoroutine { coroutine ->
