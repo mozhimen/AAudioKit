@@ -3,7 +3,7 @@ package com.mozhimen.audiok_ffmpeg
 import android.os.Bundle
 import androidx.lifecycle.lifecycleScope
 import com.mozhimen.audiok_ffmpeg.databinding.ActivityMainBinding
-import com.mozhimen.basick.basek.BaseKActivityVB
+import com.mozhimen.basick.elemk.activity.commons.BaseActivityVB
 import com.mozhimen.basick.extsk.showToast
 import com.mozhimen.basick.utilk.UtilKAsset
 import com.mozhimen.basick.utilk.UtilKFile
@@ -13,7 +13,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-class MainActivity : BaseKActivityVB<ActivityMainBinding>() {
+class MainActivity : BaseActivityVB<ActivityMainBinding>() {
     private val _amrFilePath: String by lazy { this.filesDir.absolutePath + "/audiok_ffmpeg/test.amr" }
     private val _wavFilePath: String by lazy { this.filesDir.absolutePath + "/audiok_ffmpeg/test.wav" }
     private val _speexFilePath: String by lazy { this.filesDir.absolutePath + "/audiok_ffmpeg/test.spx" }
