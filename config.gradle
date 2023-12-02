@@ -1,9 +1,9 @@
 ext {
     android = [
-            compileSdk     : 32,
-            applicationId  : "com.mozhimen.audiok_ffmpeg",
+            compileSdk     : 33,
+            applicationId  : "com.mozhimen.audiok_ffmpeg.test",
             minSdk         : 24,
-            targetSdk      : 32,
+            targetSdk      : 33,
             versionCode    : 2,
             versionName    : "2.0.0",
             multiDexEnabled: true
