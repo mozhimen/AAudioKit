@@ -4,7 +4,8 @@ plugins {
 }
 
 android {
-    compileSdk 33
+    namespace  "com.mozhimen.audiok.ffmpeg"
+    compileSdk 34
 
     defaultConfig {
         minSdk 24
@@ -37,9 +38,7 @@ android {
 
 dependencies {
     implementation 'com.arthenica:mobile-ffmpeg-full:4.4'
-    //coroutine
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0'
+    implementation project(':SwiftKit:basick')
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

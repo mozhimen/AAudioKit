@@ -1,8 +1,9 @@
-package com.mozhimen.audiok_ffmpeg
+package com.mozhimen.audiok.ffmpeg
 
 import android.util.Log
 import com.arthenica.mobileffmpeg.Config
 import com.arthenica.mobileffmpeg.FFmpeg
+import com.mozhimen.basick.utilk.commons.IUtilK
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlin.coroutines.resume
 
@@ -13,8 +14,7 @@ import kotlin.coroutines.resume
  * @Date 2022/11/10 23:42
  * @Version 1.0
  */
-object AudioKTrans {
-    private const val TAG = "AudioKTrans>>>>>"
+object AudioKTrans: IUtilK {
 
     @JvmStatic
     suspend fun speex2mp3(sourcePathWithName: String, destPathWithName: String): Boolean {

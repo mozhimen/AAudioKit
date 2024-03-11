@@ -1,4 +1,4 @@
-package com.mozhimen.audiok_ffmpeg
+package com.mozhimen.audiok.ffmpeg.test
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.mozhimen.audiok_ffmpeg.test", appContext.packageName)
+        assertEquals("com.mozhimen.audiok.ffmpeg", appContext.packageName)
     }
 }

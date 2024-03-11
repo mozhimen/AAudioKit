@@ -1,27 +1,27 @@
-package com.mozhimen.audiok_ffmpeg.test
+package com.mozhimen.audiok.ffmpeg.test
 
 import android.os.Bundle
 import androidx.lifecycle.lifecycleScope
-import com.mozhimen.audiok_ffmpeg.AudioKTrans
-import com.mozhimen.audiok_ffmpeg.test.databinding.ActivityMainBinding
-import com.mozhimen.basick.elemk.androidx.appcompat.bases.BaseActivityVB
+import com.mozhimen.audiok.ffmpeg.AudioKTrans
+import com.mozhimen.audiok.ffmpeg.test.databinding.ActivityMainBinding
+import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVDB
 import com.mozhimen.basick.utilk.android.widget.showToast
 import com.mozhimen.basick.utilk.kotlin.UtilKStrAsset
 import com.mozhimen.basick.utilk.kotlin.UtilKStrFile
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import com.mozhimen.componentk.mediak.audio.MediaKAudio
-import com.mozhimen.componentk.mediak.audio.mos.MAudioKInfo
+import com.mozhimen.mediak.audio.MediaKAudio
+import com.mozhimen.mediak.audio.mos.MAudioKInfo
 import kotlinx.coroutines.withContext
 
-class MainActivity : BaseActivityVB<ActivityMainBinding>() {
+class MainActivity : BaseActivityVDB<ActivityMainBinding>() {
     private val _amrFilePath: String by lazy { this.filesDir.absolutePath + "/audiok_ffmpeg/test.amr" }
     private val _wavFilePath: String by lazy { this.filesDir.absolutePath + "/audiok_ffmpeg/test.wav" }
     private val _speexFilePath: String by lazy { this.filesDir.absolutePath + "/audiok_ffmpeg/test.spx" }
     private val _wavFilePath1: String by lazy { this.filesDir.absolutePath + "/audiok_ffmpeg/test1.wav" }
     override fun initView(savedInstanceState: Bundle?) {
         //拷贝
-        vb.btnCopy.setOnClickListener {
+        vdb.btnCopy.setOnClickListener {
             lifecycleScope.launch(Dispatchers.Main) {
                 if (UtilKStrFile.isFileExist(_amrFilePath)) {
                     "AMR已经拷贝到目的地址".showToast()
@@ -36,7 +36,7 @@ class MainActivity : BaseActivityVB<ActivityMainBinding>() {
         }
 
         //speex转MP3
-        vb.btnAmrToWav.setOnClickListener {
+        vdb.btnAmrToWav.setOnClickListener {
             lifecycleScope.launch(Dispatchers.Main) {
                 if (!UtilKStrFile.isFileExist(_amrFilePath)) {
                     "amr源文件不存在".showToast()
@@ -55,7 +55,7 @@ class MainActivity : BaseActivityVB<ActivityMainBinding>() {
         }
 
         //播放
-        vb.btnPlay.setOnClickListener {
+        vdb.btnPlay.setOnClickListener {
             lifecycleScope.launch(Dispatchers.Main) {
                 if (!UtilKStrFile.isFileExist(_wavFilePath)) {
                     "转化后待播放的wav文件不存在".showToast()
@@ -66,7 +66,7 @@ class MainActivity : BaseActivityVB<ActivityMainBinding>() {
         }
 
         //拷贝
-        vb.btnCopySpeex.setOnClickListener {
+        vdb.btnCopySpeex.setOnClickListener {
             lifecycleScope.launch(Dispatchers.Main) {
                 if (UtilKStrFile.isFileExist(_speexFilePath)) {
                     "speex已经拷贝到目的地址".showToast()
@@ -81,7 +81,7 @@ class MainActivity : BaseActivityVB<ActivityMainBinding>() {
         }
 
         //speex转MP3
-        vb.btnSpeexToWav.setOnClickListener {
+        vdb.btnSpeexToWav.setOnClickListener {
             lifecycleScope.launch(Dispatchers.Main) {
                 if (!UtilKStrFile.isFileExist(_speexFilePath)) {
                     "speex源文件不存在".showToast()
@@ -100,7 +100,7 @@ class MainActivity : BaseActivityVB<ActivityMainBinding>() {
         }
 
         //播放
-        vb.btnPlaySpeex.setOnClickListener {
+        vdb.btnPlaySpeex.setOnClickListener {
             lifecycleScope.launch(Dispatchers.Main) {
                 if (!UtilKStrFile.isFileExist(_wavFilePath1)) {
                     "转化后待播放的wav文件不存在".showToast()

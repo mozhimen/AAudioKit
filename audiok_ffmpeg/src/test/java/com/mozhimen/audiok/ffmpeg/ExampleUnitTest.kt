@@ -1,4 +1,4 @@
-package com.mozhimen.audiok_ffmpeg.test
+package com.mozhimen.audiok.ffmpeg
 
 import org.junit.Test
 
