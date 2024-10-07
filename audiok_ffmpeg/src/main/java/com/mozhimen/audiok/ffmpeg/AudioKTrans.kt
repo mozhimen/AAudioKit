@@ -3,7 +3,7 @@ package com.mozhimen.audiok.ffmpeg
 import android.util.Log
 import com.arthenica.mobileffmpeg.Config
 import com.arthenica.mobileffmpeg.FFmpeg
-import com.mozhimen.basick.utilk.commons.IUtilK
+import com.mozhimen.kotlin.utilk.commons.IUtilK
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlin.coroutines.resume
 
