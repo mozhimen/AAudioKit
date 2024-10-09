@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.lifecycle.lifecycleScope
 import com.mozhimen.audiok.ffmpeg.AudioKTrans
 import com.mozhimen.audiok.ffmpeg.test.databinding.ActivityMainBinding
-import com.mozhimen.kotlin.elemk.androidx.appcompat.bases.databinding.BaseActivityVDB
+import com.mozhimen.bindk.bases.viewdatabinding.activity.BaseActivityVDB
 import com.mozhimen.kotlin.utilk.android.widget.showToast
 import com.mozhimen.kotlin.utilk.kotlin.UtilKStrAsset
 import com.mozhimen.kotlin.utilk.kotlin.UtilKStrFile
