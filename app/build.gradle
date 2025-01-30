@@ -42,9 +42,9 @@ android {
 }
 
 dependencies {
-    implementation project(':SwiftKit:bindk')
-    implementation project(':AMediaKit:mediak_audio')
-    implementation project(':audiok_ffmpeg')
+    implementation project(':ASwiftKit:bindk')
+    implementation project(':AMediaKit:audio')
+    implementation project(':ffmpeg')
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

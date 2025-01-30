@@ -2,6 +2,12 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.8">
+      <module name="AAudioKit.AMediaKit.mediak_audio" target="17" />
+      <module name="AAudioKit.AMediaKit.mediak_player" target="17" />
+      <module name="AAudioKit.APostKit.postk_livedata" target="17" />
+      <module name="AAudioKit.audiok_ffmpeg" target="17" />
+      <module name="AAudioKit.SwiftKit.basick" target="17" />
+      <module name="AAudioKit.SwiftKit.bindk" target="17" />
       <module name="AudioKit.AMediaKit.mediak_audio" target="17" />
       <module name="AudioKit.AMediaKit.mediak_player" target="17" />
       <module name="AudioKit.APostKit.postk_livedata" target="17" />
